@@ -1,0 +1,134 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Master Password">
+
+        <EditTextPreference
+            app:defaultValue=""
+            app:key="master_password"
+            app:title="Password to Access Settings"
+            app:summary="Leave blank to disable password protection"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Exercises">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="four_pos_enable"
+            app:summary="Exercise using straight, tabletop, hook, flat fist, and fist positions"
+            app:title="Four Position Finger Exercise" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="thumb_enable"
+            app:summary="Exercise to touch tip of thumb to each finger"
+            app:title="Thumb Movement Exercise" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="wrist_enable"
+            app:summary="Exercise to bend wrist backwards and forwards with fist and straight"
+            app:title="Wrist Movement Exercise" />
+
+        <DropDownPreference
+            app:defaultValue="three"
+            app:key="number_of_reps"
+            app:title="Number of Repetitions"
+            app:summary="Select the number of times to repeat each exercise"
+            app:entries="@array/reps_entries"
+            app:entryValues="@array/reps_values"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Options">
+
+        <DropDownPreference
+            app:defaultValue="finger_all"
+            app:key="progress_finger"
+            app:title="Finger to Plot on Progress Graph"
+            app:summary="Select which finger is displayed in progress graphs"
+            app:entries="@array/finger_entries"
+            app:entryValues="@array/finger_values"
+            app:useSimpleSummaryProvider="true"/>
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="notifications"
+            app:summary="Enable notifications to be sent to do exercises"
+            app:title="Notifications" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="email_progress"
+            app:summary="Enable and app will send periodic emails with patient progress"
+            app:title="Automatic Progress Emails (WIP)" />
+
+        <EditTextPreference
+            app:defaultValue=""
+            app:dependency="email_progress"
+            app:key="email_address"
+            app:title="Email Address (WIP)"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="once_week"
+            app:dependency="email_progress"
+            app:entries="@array/frequency_entries"
+            app:entryValues="@array/frequency_values"
+            app:key="email_frequency"
+            app:title="Email Frequency (WIP)"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="pain_feedback"
+            app:summary="Enable to allow patient self reporting pain levels"
+            app:title="Pain Feedback Reporting (WIP)" />
+
+        <Preference
+            app:title="Calibrate"
+            app:key="calibrate_setting"
+            app:summary="Calibrate device with min and max positions (use therapist/friends hand)" />
+
+        <Preference
+            app:title="Reset"
+            app:key="full_reset"
+            app:summary="Resets all stored data including calibration, targets, and progress" />
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

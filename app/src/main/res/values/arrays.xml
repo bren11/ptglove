@@ -1,0 +1,85 @@
+<resources>
+    <string-array name="frequency_entries">
+        <item>Each exercise</item>
+        <item>Once a day</item>
+        <item>Every other day</item>
+        <item>Twice a week</item>
+        <item>Once a week</item>
+        <item>Every other week</item>
+        <item>Once a month</item>
+    </string-array>
+
+    <string-array name="frequency_values">
+        <item>every_exercise</item>
+        <item>daily</item>
+        <item>bi_daily</item>
+        <item>twice_week</item>
+        <item>once_week</item>
+        <item>bi_week</item>
+        <item>once_month</item>
+    </string-array>
+
+    <string-array name="reps_entries">
+        <item>Once</item>
+        <item>Twice</item>
+        <item>Three times</item>
+        <item>Four times</item>
+        <item>Five_times</item>
+    </string-array>
+
+    <string-array name="reps_values">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+    </string-array>
+
+    <string-array name="finger_entries">
+        <item>All Fingers</item>
+        <item>Thumb</item>
+        <item>Index Finger</item>
+        <item>Middle Finger</item>
+        <item>Ring Finger</item>
+        <item>Pinkie</item>
+        <item>Wrist</item>
+        <item>Thumb Finger - Upper Joint</item>
+        <item>Thumb Finger - Knuckle</item>
+        <item>Index Finger - Upper Joint</item>
+        <item>Index Finger - Middle Joint</item>
+        <item>Index Finger - Knuckle</item>
+        <item>Middle Finger - Upper Joint</item>
+        <item>Middle Finger - Middle Joint</item>
+        <item>Middle Finger - Knuckle</item>
+        <item>Ring Finger - Upper Joint</item>
+        <item>Ring Finger - Middle Joint</item>
+        <item>Ring Finger - Knuckle</item>
+        <item>Pinkie Finger - Upper Joint</item>
+        <item>Pinkie Finger - Middle Joint</item>
+        <item>Pinkie Finger - Knuckle</item>
+    </string-array>
+
+    <string-array name="finger_values">
+        <item>finger_all</item>
+        <item>finger_thumb</item>
+        <item>finger_index</item>
+        <item>finger_middle</item>
+        <item>finger_ring</item>
+        <item>finger_pinkie</item>
+        <item>joint_wrist</item>
+        <item>joint_thumb_upper</item>
+        <item>joint_thumb_knuckle</item>
+        <item>joint_index_upper</item>
+        <item>joint_index_middle</item>
+        <item>joint_index_knuckle</item>
+        <item>joint_middle_upper</item>
+        <item>joint_middle_middle</item>
+        <item>joint_middle_knuckle</item>
+        <item>joint_ring_upper</item>
+        <item>joint_ring_middle</item>
+        <item>joint_ring_knuckle</item>
+        <item>joint_pinkie_upper</item>
+        <item>joint_pinkie_middle</item>
+        <item>joint_pinkie_knuckle</item>
+    </string-array>
+</resources>
